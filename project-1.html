@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+   
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Culture and UX Methods</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!--hamburger icon-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+    <!--nav bar-->
+    <div id="nav-wrapper">
+        <header>
+            <div id="alina"><a href="/">Alina Verduzco</a></div>
+            <nav>
+                <ul class="nav-ul small-caps">
+                    <li><a href="/index.html#projects">Projects</a></li>
+                    <li><a href="/assets/av-resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
+                    <li><a href="/about.html">About Me</a></li>
+                </ul>
+            </nav>
+    
+            <div id="menu-icon" onclick="toggleMobileMenu(this)">
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()"><span class="material-symbols-outlined">menu</span>
+                <ul class="mobile-menu">
+                    <li><a href="/index.html#projects">Projects</a></li>
+                    <li><a href="/assets/av-resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
+                    <li><a href="/about.html">About Me</a></li>
+                </ul>
+            </div>
+        </header>
+        </div>
+
+    <!--hero section-->
+    <div class="row">
+        <div class="col-12 hero fadeInUp-animation">
+            <img src="/assets/p1-hero-test.png" alt="3 by 3 arrangement of circles. 8 are colored red, 1 is empty with a dashed outline.">
+            <h1 class="proj-title">Exploring the Impact of Culture on UX Research Methods</h1>
+        </div>
+    </div>
+
+    <!--main content section-->
+    <div class="row">
+        <!--sidebar-->
+        <div class="col-2 sidebar small-caps">
+            <ul>
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#intro">Introduction</a></li>
+                <li><a href="#lit-review">Literature Review</a></li>
+                <li><a href="#methods">Methods</a></li>
+                <li><a href="#findings">Findings</a></li>
+                <li><a href="#conclusion">Conclusion</a></li>
+                <li><a href="#limitations">Limitations and Further Research</a></li>
+                <li><a href="#acknowledgments">Acknowledgments</a></li>
+                <li><a href="#references">References</a></li>
+            </ul>
+        </div>
+
+        <!--scrollable main content-->
+        <main>
+        <div class="col-8 main-content">
+            <section id="overview">
+            <h2 class="small-caps">Overview</h2>
+                <p>This research was completed as my senior thesis for the University Honors Program at California State University, San Bernardino under the supervision of <a href="#">Associate Professor Rob Ray</a>.</p>
+                <p>If you have any questions or want to talk about my project, you can contact me at <a href="mailto: alina.verduzco@csusb.edu">alina.verduzco@csusb.edu</a>.</p> 
+                <p>You can read my full paper <a href="#">here</a>.</p>
+            </section>
+                    
+            <section id="intro">
+            <h2 class="small-caps">Introduction</h2>
+                    <p>UX is a traditionally Western field. As it becomes more popular and practiced internationally, many researchers have questioned whether UX research methods are as effective in non-Western cultures. Existing research suggests that culture does have an impact on UX research methods. However, many of these studies compare methods across broad, international groups. As a result, their findings are limited to the hegemonic cultural groups of each country. Additionally, while there are studies that compare UX research methods across cultural groups within an individual country, these studies do not occur in the West. In general, there is an assumption that traditional UX research methods are effective across all of the West when there is a lack of research supporting this.</p>
+                    <p>To begin to address this gap, I tested three UX research methods with Black, Asian, and Latinx women. First, participants were asked to think aloud, complete a survey, and participate in an interview as part of a typical usability study. Then, in a follow-up interview, we discussed their experiences with each of the three methods. These discussions, combined with my observations, <span class="highlight">suggest that Black, Asian, and Latinx women experience UX research methods differently.</span></p>
+            </section>
+                
+            <section id="lit-review">
+            <h2 class="small-caps">Literature Review</h2>
+            <h3>What do we know about culture and UX research methods?</h3>
+                    <p>To give a quick recap of existing research, I've identified <span class="highlight">two types of studies</span> that deal with culture and UX research methods. The first type of study is what I call the “international study.” <span class="highlight">International studies test and compare UX research methods across multiple countries.</span> For example, a 2002 study by Evers tested the think aloud, survey, and interview with English, North American, Dutch, and Japanese participants.</p>
+                    <!--<img src="/assets/p1-lit-review-map-1.png" alt="map of international studies">-->
+                    <p>The second type of study is what I call the “national study.” These studies are similar in that they test UX research methods across cultural groups. However, <span class="highlight">national studies differ because they focus on cultural groups within one country.</span> A 2011 study by Hsieh, for example, tested UX research methods with younger and older Taiwanese participants. There have been similar studies in Malaysia, India, and Namibia that compare age, gender, and class groups.</p>
+                    <!--<img src="/assets/p1-lit-review-map-2.png" alt="map of national studies">-->
+                    <p>Both national and international studies have found that <span class="highlight">culture does have an impact</span> on the efficacy of UX research methods. Evers found that surveys posed problems for English, Dutch, and Japanese participants. Hsieh found that younger Taiwanese participants were more likely to give feedback and criticism than older Taiwanese participants.</p>
+            <h3>Discussion</h3>
+                    <p>With that being said, there are some issues to consider with the research so far.</p>
+                    <p>First, <span class="highlight">international studies lack specificity.</span> Because they are comparing such broad groups, it's important to question who exactly is being represented. <span class="highlight">Who were the “North American” participants in Evers' study?</span> What does all of North America have in common that the entire continent was being compared to individual countries? As a Black and Mexican-American person, these were my first questions. Later, I realized that Evers was referring to US Americans. Although I was initially mistaken, there was still a question of representation. And, while I first asked this question of Evers' study, it is a valid question for any of the international studies. <span class="highlight">How well were marginalized groups represented in these studies?</span></p>
+                    <p>As for the national studies, they don't have this problem because of their narrow scope. However, it is worth noting that <span class="highlight">none of these studies occur in the West.</span> That means</p>
+            </section>
+
+            <section id="methods">
+            <h2 class="small-caps">Methods</h2>
+            <h3>We tested UX research methods with...</h3>
+                <div class="viz-chunk">
+                    <div class="row">
+                        <div class="col-6 viz-wrapper">
+                            <img src="/assets/p1-participants-1.1.png" alt="2 gray circles and 1 empty circle with a dashed outline" class="data-viz">
+                        </div>
+                        <div class="col-6">
+                            <p class="viz-label">2 Black women</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 viz-wrapper">
+                            <img src="/assets/p1-participants-1.2.png" alt="3 gray circles" class="data-viz">
+                        </div>
+                        <div class="col-6">
+                            <p class="viz-label">3 Asian women</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 viz-wrapper">
+                            <img src="/assets/p1-participants-1.3.png" alt="3 gray circles" class="data-viz">
+                        </div>
+                        <div class="col-6">
+                            <p class="viz-label">3 Latinx women</p>
+                        </div>
+                    </div>
+                </div>
+                <p>All of our participants were students at California State University, San Bernardino. Their ages ranged from <span class="highlight">18 to 24 years old.</span> It's important to note that <span class="highlight">none of them were Art or Design majors.</span> This was to ensure that they weren't overly familiar with web design concepts or the critiquing process.</p>
+            <h3>We did this by...</h3>
+                <h4>Mock Usability Study</h4>
+                    <p>First, we conducted a mock usability study. We tested <a href="#">connectie.org</a> using the think aloud, survey, and interview methods.</p>
+                <h4>Follow-Up Interview</h4>
+                    <p>In a follow-up interview, I asked participants to <span class="highlight">rank each of the methods</span> from favorite to least favorite. Ranking the methods <span class="highlight">opened up the discussion</span> so that participants could explain what they liked and didn't like about each of the methods. It also helped <span class="highlight">avoid framing any of the methods as problematic.</span></p>
+                    <p>After ranking the methods, <span class="highlight">we discussed the role of culture</span> in the study. Although I had observations, it was important to validate them with my participants.</p>
+            </section>
+                
+            <section id="findings">
+            <h2 class="small-caps" id="findings">Findings</h2>
+            <h3>Are there cultural differences within the US?</h3>
+                <h4>Black, Asian, and Latinx women <span class="emph1">believe culture can have an impact</span></h4>
+                <h5>Responses to the question, "Do you think a person's culture can play a role in the way they participate in these methods?"</h5>
+                <div class="viz-chunk">
+                <div class="row">
+                    <div class="col-6 viz-wrapper">
+                        <img src="/assets/p1-culture-impact-1.1.png" alt="2 out of 2" class="data-viz">
+                    </div>
+                    <div class="col-6">
+                        <p class="viz-label">Black women</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 viz-wrapper">
+                        <img src="/assets/p1-culture-impact-1.2.png" alt="3 out of 3" class="data-viz">
+                    </div>
+                    <div class="col-6">
+                        <p class="viz-label">Asian women</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 viz-wrapper">
+                        <img src="/assets/p1-culture-impact-1.3.png" alt="3 out of 3" class="data-viz">
+                    </div>
+                    <div class="col-6">
+                        <p class="viz-label">Latinx women</p>
+                    </div>
+                </div>
+                </div>
+                <p>After trying all of the methods, everyone said they believed culture could have an impact. They described ways they could imagine a person's culture influencing their behavior and comfort during the study. For example, multiple participants mentioned politeness in East Asian culture and suggested that East Asians may not feel as comfortable giving criticism.</p>
+
+                <h4>Latinx women <span class="emph1">believed their culture had an impact</span></h4>
+                <h5>Responses to the question, "Can you see ways in which your culture played a role in the study?"</h5>
+                <div class="viz-chunk">
+                <div class="row">
+                    <div class="col-6 viz-wrapper">
+                        <img src="/assets/p1-culture-impact-2.1.png" alt="0 out of 2" class="data-viz">
+                    </div>
+                    <div class="col-6">
+                        <p class="viz-label">Black women</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 viz-wrapper">
+                        <img src="/assets/p1-culture-impact-2.2.png" alt="0 out of 3" class="data-viz">
+                    </div>
+                    <div class="col-6">
+                        <p class="viz-label">Asian women</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 viz-wrapper">
+                        <img src="/assets/p1-culture-impact-2.3.png" alt="2 out of 3" class="data-viz">
+                    </div>
+                    <div class="col-6">
+                        <p class="viz-label">Latinx women</p>
+                    </div>
+                </div>
+                </div>
+                <p>Although everyone believed culture could have an impact, only Latinx women believed that their culture actually played a role in the study. They expressed <span class="highlight">concerns over whether their thoughts were important enough to say aloud.</span> For example, they were unsure if expressing their opinion about the color palette was relevant to the study. They attributed this to their upbringing not just as Latinx people, but specifically as Latinx women. Although this did not have a major impact on their participation, it was a concern in the back of their mind that might be best described as tension.</p>
+                <p>In contrast to the think aloud, <span class="highlight">the interview eased this tension</span> since they were directly asked for their thoughts and opinions. Being prompted by questions and asked to elaborate reassured them that their thoughts were important&mdash; even when it came to seemingly minor things like color.</p>
+
+                <h4>Black and Latinx women <span class="emph1">appeared to fear judgment</span></h4>
+                <h5>Participants who expressed concerns about their tech-savviness being tested</h5>
+                <div class="viz-chunk">
+                <div class="row">
+                    <div class="col-6 viz-wrapper">
+                        <img src="/assets/p1-culture-impact-3.1.png" alt="2 out of 2" class="data-viz">
+                    </div>
+                    <div class="col-6">
+                        <p class="viz-label">Black women</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 viz-wrapper">
+                        <img src="/assets/p1-culture-impact-3.2.png" alt="0 out of 3" class="data-viz">
+                    </div>
+                    <div class="col-6">
+                        <p class="viz-label">Asian women</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 viz-wrapper">
+                        <img src="/assets/p1-culture-impact-3.3.png" alt="2 out of 3" class="data-viz">
+                    </div>
+                    <div class="col-6">
+                        <p class="viz-label">Latinx women</p>
+                    </div>
+                </div>
+                </div>
+                <p>Throughout our discussions in the follow-up interview, Black and Latinx women expressed concerns that their tech-savviness was being tested. During the think aloud, they were <span class="highlight">worried that making a mistake on the website would reflect poorly on them.</span> Although we were there to test the website, they felt a bit like they were the ones being tested.</p>
+            </section>
+
+            <section id="conclusion">
+            <h2 class="small-caps">Conclusion</h2>
+            <h3>What does all of this mean?</h3>
+                <p>Overall, <span class="highlight">none of the methods tested in this study posed significant problems</span> for Black, Asian, or Latinx women. In general, all of the methods were described as easy, with the interview being ranked the most favorite across all women. The think aloud was ranked second. Although it was unfamiliar, many women enjoyed the freedom of saying all of their thoughts uninterrupted. The survey ranked last, mainly out of indifference. It was described as straightforward, but limited and forgettable.</p> 
+                <p>Still, Black and Latinx women did experience some tension during the think aloud. This suggests that <span class="highlight">Black and Latinx women may hesitate to fully participate</span> in the UX research process.</p> 
+            </section>
+
+            <section id="limitations">
+            <h2 class="small-caps">Limitations and Further Research</h2>
+            <h3>How can we expand on this research?</h3>
+                <h4>New questions</h4>
+                    <ul>
+                        <li>How might we increase the comfort of Black and Latinx women?</li> 
+                        <li>How do Latinx men and women compare?</li>
+                    </ul>
+                <h4>Addressing limitations</h4>
+                <ul>
+                    <li>Sample Size</li> 
+                    <li>Other cultural groups</li>
+                    <li>Age, gender, or class groups</li>
+                </ul>
+            </section>
+
+            <section id="acknowledgments">
+            <h2 class="small-caps">Acknowledgments</h2>
+            <h3>Thank you!</h3>
+            <h4>Land Acknowledgment</h4>
+                <p>We recognize that California State University, San Bernardino sits on the territory and ancestral land of the San Manuel Band of Mission Indians (Yuhaaviatam). We recognize that every member of the California State University, San Bernardino community has benefitted and continues to benefit from the use and occupation of this land since the institution's founding in 1965.</p>
+                <p>Consistent with our values of community and diversity, we have a responsibility to acknowledge and make visible the university's relationship to Native peoples. By offering this Land Acknowledgment, we affirm Indigenous sovereignty and will work to hold California State University, San Bernardino more accountable to the needs of American Indian and Indigenous peoples.</p>
+            </section>
+
+            <section id="references">
+            <h2 class="small-caps">References</h2>
+                <ol>
+                    <li>Evers, V. (2002). Cross-Cultural Applicability of User Evaluation Methods: A Case Study amongst Japanese, North-American, English and Dutch Users. <em>CHI '02 Extended Abstracts on Human Factors in Computing Systems.</em></li>
+                    <li>Clemmensen T., Shi, Q., Kumar, J., Li, H., Sun, X., Yammiyavar, P. (2007). Cultural usability tests - how usability tests are not the same all over the world.</li>
+                    <li>Oyugi, C., Dunckley, L., Smith, A. (2008). Evaluation Methods and Cultural Differences: Studies Across Three Continents. <em>NordiCHI '08: Proceedings of the 5th Nordic conference on Human-computer interaction: building bridges.</em></li>
+                    <li>Yeo (1998) “Cultural effects in usability assessment”</li>
+                    <li>Chavan (2008) “Another culture, another method”</li>
+                    <li>Hsieh, H. C. L. (2011). Exploring the Impact of Cultures on Web Usability Test. <em>In International Conference on Human Centered Design.</em></li>
+                    <li>Paterson B., Winschiers-Theophilus, H., Dunne, T. T, Schinzel, B., Underhill, L. G. (2011). Interpretation of a cross-cultural usability evaluation: A case study based on a hypermedia system for rare species management in Namibia. <em>Interacting with Computers</em></li>
+                    <li>Constanza-Chock, S. (2020). <em>Design Justice.</em> The MIT Press.</li>
+                </ol>
+            </section>
+        </div>
+        </main>
+
+        <!--space to balance out the sidebar?-->
+        <div class="col-2 sidebar-bal">
+        </div>
+    </div>
+
+    <!--other projects section-->
+    <div class="row">
+        <!--this is the section header for more projects-->
+        <div class="col-12 other-project-divider">
+            <h2>More Projects</h2>
+        </div>
+    </div>
+
+    <div class="row">
+        <!--other project-->
+        <div class="col-6 other-project other-project-light" onclick="location.href='/project-2.html';" style="cursor:pointer;">
+            <h3 class="other-proj-text">Project 2</h3>
+            <p class="other-proj-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt ut nulla sed feugiat. Sed eget nulla ut purus facilisis laoreet quis porttitor sem. Nunc bibendum ac nisl sed maximus. Sed eu quam sodales, porttitor quam pretium, rutrum risus. Nullam et quam in sem hendrerit faucibus.</p>
+        </div>
+
+        <!--other other project-->
+        <div class="col-6 other-project" onclick="location.href='/project-3.html';" style="cursor:pointer;">
+            <h3 class="other-proj-text">Project 3</h3>
+            <p class="other-proj-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt ut nulla sed feugiat. Sed eget nulla ut purus facilisis laoreet quis porttitor sem. Nunc bibendum ac nisl sed maximus. Sed eu quam sodales, porttitor quam pretium, rutrum risus. Nullam et quam in sem hendrerit faucibus.</p>
+        </div>
+    </div>
+
+    <!--footer-->
+    <div class="footer">
+        <div class="row">
+            <div class="col-6 footer-left">
+                <p>&copy; 2023 Alina Verduzco<p>
+            </div>
+            <div class="col-6 footer-right">
+                <a href="https://www.linkedin.com/in/alina-verduzco/" target="_blank" rel="noopener noreferrer"><img src="/assets/linked-in.png" alt="Visit my Linked In profile" class="icon"></a>
+                <div id="icon-space">.</div>
+                <a href="https://www.behance.net/alinav7" target="_blank" rel="noopener noreferrer"><img src="/assets/behance.png" alt="Visit my Behance page" class="icon"></a>
+            </div>
+        </div>
+    </div>
+
+    <!--javascript for mobile menu-->
+    <script>
+        function toggleMobileMenu(menu) {
+            menu.classList.toggle('open');
+        }
+    </script>
+
+</body>
+
+</html>
